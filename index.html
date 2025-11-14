@@ -1,23 +1,118 @@
 <!DOCTYPE html>
 
-<html lang = "en">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
+        <title>Atharva Aalok</title>
+
         <meta name="author" content="Atharva Aalok">
         <meta
             name="description"
             content="Atharva Aalok is a graduate student at Stanford University working on
             aerodynamic shape optimization, computational design, and machine learning for CFD."
         >
-        <meta name="viewport" content="width=device-width", initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="Computational Design, Machine Learning, CFD">
+
         <link rel="icon" href="assets/favicon.svg" type="image/x-icon">
         
-        <title>Atharva Aalok</title>
+        <!--Main styles-->
+        <link rel="stylesheet" href="main.css" type="text/css">
+        <link rel="stylesheet" href="random_dots.css">
+
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+        <script src="random_dots.js"></script>
+
+        <!--Icons-->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+        
+        <!--Google Fonts-->
+        <link 
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        >
     </head>
 
+
     <body>
-        Atharva Aalok
+        <header class="header">
+            <nav class="header-right" aria-label="Main navigation">
+                <a href="index.html"><b>Home</b></a>
+                <a href="research.html"><b>Research</b></a>
+                <a href="projects.html"><b>Projects</b></a>
+                <a href="hobbies.html"><b>Hobbies</b></a>
+            </nav>
+        </header>
+
+
+        <main class="page-layout">
+            <section class="intro">
+                <h1 class="name">Atharva Aalok</h1>
+
+                <p>
+                    I am a second year MS student in AeroAstro at Stanford University working with
+                    <a href="https://engineering.stanford.edu/people/juan-alonso" target="_blank">
+                    Prof. Juan J. Alonso </a> at the
+                    <a href="https://adl.stanford.edu/" target="_blank">Aerospace Design Lab</a>. I
+                    also collaborate with
+                    <a href="https://tensorlab.cms.caltech.edu/users/anima/" target="_blank">Prof.
+                    Anima Anandkumar</a>'s' group at Caltech. Previously, I obtained my Bachelor's
+                    degree in Aerospace engineering at IIT Madras where I worked with
+                    <a href="http://www.ae.iitm.ac.in/~sujith/" target="_blank">Prof. R.I.
+                    Sujith</a>.
+                </p>
+
+                <p>
+                    I am passionate about computational design optimization focussing on aircraft
+                    design. In particular, methods accelerated using Machine Learning. I work on the
+                    full shape optimization stack:
+                    <ol>
+                        <li><b>Representation:</b> Developed the first non-self-intersecting geometry representation scheme: Neural Injective Geometry.</li>
+                        <li><b>Evaluation:</b> Physics based ML (Neural Operators etc.) for flow evaluation.</li>
+                        <li><b>Optimization:</b> Adjoint-based optimization, DeepRL optimization.</li>
+                    </ol>
+                </p>
+
+                <p style="display:inline;color:#ff0066;">
+                    <br>
+                    <b><u>NOTE:</u> I am applying for graduate school for Fall 2026 admit.</b>
+                </p>
+            </section>
+
+            <aside class="profile">
+                <a href="assets/profile_pic.jpg">
+                    <img
+                        src="assets/profile_pic.jpg"
+                        alt="Profile picture"
+                        class="profile-pic"
+                    >
+                </a>
+
+                <div class="social">
+                    <a href="mailto:atharvaaalok@gmail.com" title="Email">
+                        <i class="fa-solid fa-envelope social-icon"></i>
+                    </a>
+                    <a href="https://github.com/atharvaaalok" title="Github" target="_blank" 
+                        rel="noopener">
+                        <i class="fa-brands fa-github social-icon"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/atharva-aalok-506bba1a6/" title="LinkedIn"
+                        target="_blank" rel="noopener">
+                        <i class="fa-brands fa-linkedin social-icon"></i>
+                    </a>
+                    <a href="scholar" title="Google Scholar" target="_blank" rel="noopener">
+                        <i class="ai ai-google-scholar social-icon"></i>
+                    </a>
+                    <a href="https://x.com/atharvaaalok" title="X" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-x-twitter social-icon"></i>
+                    </a>
+                </div>
+            </aside>
+        </main>
+
     </body>
 
 </html>
