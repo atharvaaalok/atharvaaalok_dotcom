@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Atharva Aalok</title>
+
+        <meta name="author" content="Atharva Aalok">
+        <meta
+            name="description"
+            content="Atharva Aalok is a graduate student at Stanford University working on
+            aerodynamic shape optimization, computational design, and machine learning for CFD."
+        >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Computational Design, Machine Learning, CFD">
+
+        <link rel="icon" href="assets/favicon.svg" type="image/x-icon">
+        
+        <!--Main styles-->
+        <link rel="stylesheet" href="main.css" type="text/css">
+        <link rel="stylesheet" href="random_dots.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="random_dots.js"></script>
+        <script src="mathjax-config.js"></script>
+        <script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+        <!--Icons-->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+        
+        <!--Google Fonts-->
+        <link 
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        >
+    </head>
+
+
+    <body>
+        <header class="header">
+            <nav class="header-right" aria-label="Main navigation">
+                <a href="index.html"><b>Home</b></a>
+                <a href="research.html"><b>Research</b></a>
+                <a href="projects.html"><b>Projects</b></a>
+                <a href="hobbies.html"><b>Hobbies</b></a>
+            </nav>
+        </header>
+
+        <main class="page-container">
+            <section class="research-section">
+                <article class="research-card">
+                    <a href="assets/airfoil_shape_opt_deep_rl.svg">
+                        <img src="assets/airfoil_shape_opt_deep_rl.svg"
+                            alt="RL architecture for airfoil shape optimization."
+                            class="research-image hoverZoomLink">
+                    </a>
+
+                    <div class="research-content">
+                        <h2 class="research-title">
+                            <a href="https://github.com/atharvaaalok/airfoil_shape_opt_deep_rl"
+                                target="_blank" rel="noopener">
+                                Robust Aerodynamic Shape Optimization using Deep Reinforcement
+                                Learning and NIGnets
+                            </a>
+                        </h2>
+
+                        <p class="research-meta">
+                            <em>
+                                Advisor:
+                                <a href="https://engineering.stanford.edu/people/juan-alonso"
+                                target="_blank" rel="noopener">Prof. Juan J. Alonso</a>
+                            </em>
+                            <br>
+                            <em>
+                                Affiliation: <a href="https://adl.stanford.edu/" target="_blank">
+                                Aerospace Design Lab</a>, Stanford University
+                            </em>
+                        </p>
+
+                        <p>
+                            We design airfoils that achieve high Lift-to-Drag ratios.
+                        </p>
+
+                        <p>
+                            We formulate aerodynamic shape optimization as a Deep RL problem. To
+                            tackle the problems caused by self-intersection produced during
+                            optimization we use NIGnets, a new neural architecture that we developed
+                            that gives a hard guarantee on non-self-intersecting geometry
+                            representation. A NIGnet as a whole with a particular setting of its
+                            weights and biases (denoted by $\phi$) represents a particular shape.
+                            Our shape optimization approach can be summarized as follows:
+                        </p>
+
+                        <ol>
+                            <li>Represent state (shape) using NIGnet parameters $\phi$.</li>
+                            <li>An action corresponds to outputting $\Delta \phi$ that perturbs the
+                                NIGnet parameters to $\phi' = \phi + \Delta \phi$.</li>
+                            <li>A reward is produced at each step that corresponds to the
+                                $\frac{L}{D}$ ratio of the current shape.</li>
+                        </ol>
+
+                        <p>
+                            Since the NIGnet for any set of parameters $\phi$ always represents
+                            non-self-intersecting geometry, it will constrain the design space to
+                            only the set of physically reasonable shapes and therefore allow an RL
+                            agent to perform ambitious shape optimization. We also utilize Hindsight
+                            Experience Replay (HER) to train more general policies that can design
+                            for any target lift-to-drag ratio.
+                        </p>
+
+                        <p class="research-links">
+                            <a href="https://github.com/atharvaaalok/airfoil_shape_opt_deep_rl"
+                                target="_blank" rel="noopener" class="icon-link">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+
+                            <a href="assets/paper.pdf"
+                                target="_blank" rel="noopener" class="icon-link">
+                                <i class="fa-regular fa-file-pdf"></i>
+                            </a>
+
+                            <a href="assets/poster.pdf"
+                                target="_blank" rel="noopener" class="icon-link">
+                                <i class="fa-solid fa-person-chalkboard"></i>
+                            </a>
+
+                            <a href="assets/video.mp4"
+                                target="_blank" rel="noopener" class="icon-link">
+                                <i class="fa-solid fa-video"></i>
+                            </a>
+
+                            <a href="assets/documentation.com"
+                                target="_blank" rel="noopener" class="icon-link">
+                                <i class="fa-solid fa-book"></i>
+                            </a>
+                        </p>
+
+                    </div>
+                </article>
+            </section>
+        </main>
+    
+    </body>
+
+</html>

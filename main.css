@@ -92,7 +92,7 @@ span.highlight {
 
 /* Layout for main section: text + sidebar */
 .page-layout {
-  max-width: 1400px;
+  max-width: 1500px;
   margin: 3rem auto;
   padding: 2rem 2.5%;
   display: flex;
@@ -169,4 +169,92 @@ span.highlight {
   .intro {
     order: 0;
   }
+}
+
+
+/* Responsive: stack on small screens */
+@media (max-width: 900px) {
+  .research-card {
+    flex-direction: column;
+  }
+
+  .research-image {
+    width: 100%;
+  }
+}
+
+/* Center main content and limit width */
+.page-container {
+  max-width: 1500px;
+  margin: 4rem auto;
+  padding: 0 24px;
+}
+
+/* Research card layout: image + text */
+.research-section {
+  margin-top: 24px;
+}
+
+.research-card {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+  margin: 24px 0;
+}
+
+.research-image {
+  width: 450px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5% / 10%;
+}
+
+.research-content {
+  flex: 1;
+}
+
+.research-title {
+  margin: 0 0 8px 0;
+  font-size: 1.4rem;
+}
+
+.research-title a {
+  text-decoration: none;
+}
+
+.research-title a:hover {
+  text-decoration: underline;
+}
+
+.research-meta {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+
+
+.research-links {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.research-links a:hover {
+    text-decoration: none;
+    color: #B509AC;
+}
+
+.icon-link {
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+.icon-link {
+    font-size: 3rem;
+    color: #000000;
+    transition: color 0.2s ease-in-out;
 }
