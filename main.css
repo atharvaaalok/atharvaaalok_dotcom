@@ -258,3 +258,18 @@ span.highlight {
     color: #000000;
     transition: color 0.2s ease-in-out;
 }
+
+
+.cv-link a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;  /* space between ai-cv and pdf icon */
+}
+
+.cv-icon {
+  font-size: 3rem;
+}
+
+.cv-pdf-icon {
+  font-size: 3rem;
+}
