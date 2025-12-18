@@ -52,6 +52,8 @@
 
         <main class="page-container">
             <section class="research-section">
+
+                <!--Deep Reinforcement Learning based Shape Optimization-->
                 <article class="research-card">
                     <a href="assets/airfoil_shape_opt_deep_rl.svg">
                         <img src="assets/airfoil_shape_opt_deep_rl.svg"
@@ -134,6 +136,146 @@
                             </a>
 
                             <a href="assets/documentation.com"
+                                target="_blank" rel="noopener" class="icon-link">
+                                <i class="fa-solid fa-book"></i>
+                            </a>
+                        </p>
+
+                    </div>
+                </article>
+                
+                <!--Neural Operator based Shape Optimization-->
+                <article class="research-card">
+                    <a href="assets/neuralop_shapeopt.png">
+                        <img src="assets/neuralop_shapeopt.png"
+                            alt="Bilinear interpolation of airfoils in a NeuralODE generative
+                            model." class="research-image hoverZoomLink">
+                    </a>
+
+                    <div class="research-content">
+                        <h2 class="research-title">
+                            <a href="https://github.com/neuraloperator/ShapeOpt"
+                                target="_blank" rel="noopener">
+                                Robust Shape Optimization with Neural Shape Representations and
+                                Neural Operators
+                            </a>
+                        </h2>
+
+                        <p class="research-meta">
+                            <em>
+                                Advisor:
+                                <a href="https://engineering.stanford.edu/people/juan-alonso"
+                                target="_blank" rel="noopener">Prof. Juan J. Alonso</a>
+                            </em>
+                            <br>
+                            <em>
+                                Collaborator:
+                                <a href="https://tensorlab.cms.caltech.edu/users/anima/"
+                                target="_blank" rel="noopener">Prof. Anima Anandkumar</a>
+                            </em>
+                            <br>
+                            <em>
+                                Affiliation: <a href="https://adl.stanford.edu/" target="_blank">
+                                Aerospace Design Lab</a>, Stanford University
+                            </em>
+                        </p>
+
+                        <p>
+                            We design airfoils that achieve high Lift-to-Drag ratios.
+                        </p>
+
+                        <p>
+                            Robust shape optimization using Neural Operators (FNOGNO, GINO, BNO)
+                            with geometry represented using NIGnets and NeuralODEs to prevent
+                            self-intersection and optimization over in-distribution shapes.
+                        </p>
+
+                        <p>
+                            Generated Euler and RANS datasets with $\sim$20,000 simulations each
+                            using SU2 for 1500 airfoils at 16 different angles of attack. Trained
+                            Neural Operators to 2% accuracy on pressure field and skin-friction
+                            predictions.
+                        </p>
+
+                        <p>
+                            Trained a NeuralODE based generative geometry model with hard guarantees
+                            on non-self-intersection. Achieved extremely accurate shape
+                            reconstruction loss of 1e-8 L2 on the entire shape dataset.
+                        </p>
+
+                        <p class="research-links">
+                            <a href="https://github.com/neuraloperator/ShapeOpt"
+                                target="_blank" rel="noopener" class="icon-link">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </p>
+
+                    </div>
+                </article>
+                
+                <!--NIGnets-->
+                <article class="research-card">
+                    <a href="assets/NIGnets.svg">
+                        <img src="assets/NIGnets.svg"
+                            alt="NIGnets logo with text inside."
+                            class="research-image hoverZoomLink">
+                    </a>
+
+                    <div class="research-content">
+                        <h2 class="research-title">
+                            <a href="https://github.com/atharvaaalok/airfoil_shape_opt_deep_rl"
+                                target="_blank" rel="noopener">
+                                NIGnets: Neural Injective Geometry Networks for Representing
+                                non-self-intersecting Geometry
+                            </a>
+                        </h2>
+
+                        <p class="research-meta">
+                            <em>
+                                Advisor:
+                                <a href="https://engineering.stanford.edu/people/juan-alonso"
+                                target="_blank" rel="noopener">Prof. Juan J. Alonso</a>
+                            </em>
+                            <br>
+                            <em>
+                                Affiliation: <a href="https://adl.stanford.edu/" target="_blank">
+                                Aerospace Design Lab</a>, Stanford University
+                            </em>
+                        </p>
+
+                        <p>
+                            Existing deep geometry representations do not have the right priors for
+                            aerodynamic design optimization, they often fail to mesh and represent
+                            excessively large and irrelevant design spaces. This leads to brittle
+                            and inefficient design space exploration. We solve this problem by
+                            introducing Neural Injective Geometry networks (NIGnets), a new neural
+                            architecture that parameterizes injective and closed transformations,
+                            allowing us to represent only simple closed curves and surfaces. This
+                            enables design optimization procedures working with NIGnets to perform
+                            unconstrained optimization on the network weights while maintaining the
+                            non-self-intersection property, thereby guaranteeing water-tight meshes.
+                            We also compare the representation power and inference speed of NIGnets
+                            with normalizing flow models that can potentially offer similar
+                            geometric guarantees.
+                        </p>
+
+                        <p class="research-links">
+                            <a href="https://github.com/atharvaaalok/NIGnets"
+                                target="_blank" rel="noopener" class="icon-link">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+
+                            <a href="https://github.com/atharvaaalok/NIGnets/blob/main/resources/NIGnets_paper.pdf"
+                                target="_blank" rel="noopener" class="icon-link">
+                                <i class="fa-regular fa-file-pdf"></i>
+                            </a>
+
+                            <a href="https://www.figma.com/slides/sLtZ3GBuKDcFL2KfJkTfMH/NIG_AeroAstro_ResearchLunch_5March2025?node-id=1-354&p=f&t=Y3l6B9gaEH6gEbhZ-0"
+                                target="_blank" rel="noopener" class="icon-link">
+                                <i class="fa-solid fa-person-chalkboard"></i>
+                            </a>
+
+                            <a href="https://atharvaaalok.github.io/NIGnets/"
                                 target="_blank" rel="noopener" class="icon-link">
                                 <i class="fa-solid fa-book"></i>
                             </a>
