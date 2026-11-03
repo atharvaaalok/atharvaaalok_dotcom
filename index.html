@@ -1,163 +1,297 @@
 <!DOCTYPE html>
-
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Atharva Aalok</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atharva Aalok</title>
+    <meta name="description" content="Atharva Aalok builds computational methods for designing the next generation of flying machines: agentic CAD, high-fidelity and machine-learned simulation, and learned design optimization.">
+    <link rel="canonical" href="https://atharvaaalok.com/">
 
-        <meta name="author" content="Atharva Aalok">
-        <meta
-            name="description"
-            content="Atharva Aalok works on aerodynamic shape optimization, computational design,
-            and machine learning for CFD."
-        >
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="Computational Design, Machine Learning, CFD">
+    <!--Link previews-->
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Atharva Aalok">
+    <meta property="og:description" content="Computational methods for designing the next generation of flying machines.">
+    <meta property="og:url" content="https://atharvaaalok.com/">
+    <meta property="og:image" content="https://atharvaaalok.com/assets/avatar.jpg">
+    <meta name="twitter:card" content="summary">
 
-        <link rel="canonical" href="https://atharvaaalok.com/">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Atharva Aalok",
+            "url": "https://atharvaaalok.com/",
+            "image": "https://atharvaaalok.com/assets/avatar.jpg",
+            "affiliation": "Massachusetts Institute of Technology",
+            "alumniOf": ["Stanford University", "Indian Institute of Technology Madras"],
+            "sameAs": [
+                "https://github.com/atharvaaalok",
+                "https://www.linkedin.com/in/atharva-aalok-506bba1a6/",
+                "https://x.com/atharvaaalok"
+            ]
+        }
+    </script>
 
-        <!--Link previews-->
-        <meta property="og:type" content="profile">
-        <meta property="og:title" content="Atharva Aalok">
-        <meta
-            property="og:description"
-            content="Aerodynamic shape optimization, computational design, and machine learning
-            for CFD."
-        >
-        <meta property="og:url" content="https://atharvaaalok.com/">
-        <meta property="og:image" content="https://atharvaaalok.com/assets/profile_pic.jpg">
-        <meta name="twitter:card" content="summary">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
 
-        <script type="application/ld+json">
-            {
-                "@context": "https://schema.org",
-                "@type": "Person",
-                "name": "Atharva Aalok",
-                "url": "https://atharvaaalok.com/",
-                "image": "https://atharvaaalok.com/assets/profile_pic.jpg",
-                "alumniOf": ["Stanford University", "Indian Institute of Technology Madras"],
-                "sameAs": [
-                    "https://github.com/atharvaaalok",
-                    "https://www.linkedin.com/in/atharva-aalok-506bba1a6/",
-                    "https://x.com/atharvaaalok"
-                ]
-            }
-        </script>
+<body>
+    <a class="skip" href="#main">Skip to content</a>
 
-        <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-
-        <!--Main styles-->
-        <link rel="stylesheet" href="main.css" type="text/css">
-        <link rel="stylesheet" href="random_dots.css">
-
-        <script src="random_dots.js" defer></script>
-
-        <!--Icons-->
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-            crossorigin="anonymous">
-        <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.6/css/academicons.min.css"
-            integrity="sha512-TNfdJEUUJmfj2DRlAKXBg7HroqoXYLon5XPEEWYa2+H/XSD2HAr0BwkRrAoNLAEz79x7XURTFRWDn9yhMNbbNQ=="
-            crossorigin="anonymous">
-
-        <!--Google Fonts-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&display=swap"
-        >
-    </head>
-
-
-    <body>
-        <header class="header">
-            <nav class="header-right" aria-label="Main navigation">
-                <a href="index.html" aria-current="page"><b>Home</b></a>
-                <a href="research.html"><b>Research</b></a>
-                <a href="projects.html"><b>Projects</b></a>
-            </nav>
-        </header>
-
-
-        <main class="page-layout">
-            <section class="intro">
-                <h1 class="name">Atharva Aalok</h1>
-
-                <p>
-                    I am a second year MS student in AeroAstro at Stanford University working with
-                    <a href="https://engineering.stanford.edu/people/juan-alonso" target="_blank"
-                    rel="noopener">Prof. Juan J. Alonso</a> at the
-                    <a href="https://adl.stanford.edu/" target="_blank" rel="noopener">Aerospace
-                    Design Lab</a>. I also collaborate with
-                    <a href="https://tensorlab.cms.caltech.edu/users/anima/" target="_blank"
-                    rel="noopener">Prof. Anima Anandkumar</a>'s group at Caltech. Previously, I
-                    obtained my Bachelor's degree in Aerospace engineering at IIT Madras where I
-                    worked with
-                    <a href="https://ae.iitm.ac.in/~sujith/" target="_blank" rel="noopener">Prof.
-                    R.I. Sujith</a>.
-                </p>
-
-                <p>
-                    I am passionate about computational design optimization focussing on aircraft
-                    design. In particular, methods accelerated using Machine Learning. I work on the
-                    full shape optimization stack:
-                </p>
-
-                <ol>
-                    <li><b>Representation:</b> Developed the first non-self-intersecting geometry
-                        representation scheme: Neural Injective Geometry.</li>
-                    <li><b>Evaluation:</b> Physics based ML (Neural Operators etc.) for flow
-                        evaluation.</li>
-                    <li><b>Optimization:</b> Adjoint-based optimization, DeepRL optimization.</li>
-                </ol>
-
-                <p class="note">
-                    <b><u>NOTE:</u> I am applying for graduate school for Fall 2026 admit.</b>
-                </p>
-
-                <p class="cv-link">
-                    <a href="assets/AtharvaAalok_CV.pdf" title="CV" aria-label="CV (PDF)"
-                        target="_blank" rel="noopener">
-                        <i class="ai ai-cv social-icon" aria-hidden="true"></i>
-                        <i class="fa-solid fa-file-pdf social-icon" aria-hidden="true"></i>
-                    </a>
-                </p>
-            </section>
-
-            <aside class="profile">
-                <a href="assets/profile_pic.jpg">
-                    <img
-                        src="assets/profile_pic.jpg"
-                        alt="Atharva Aalok"
-                        width="1100"
-                        height="1100"
-                        class="profile-pic"
-                    >
+    <header class="intro wrap">
+        <img class="portrait" src="assets/avatar.jpg" width="480" height="480" alt="Atharva Aalok">
+        <div>
+            <h1>Atharva Aalok</h1>
+            <p class="tagline">I build methods for designing the next generation of flying machines.</p>
+            <nav class="links" aria-label="Elsewhere">
+                <a href="mailto:atharvaaalok@gmail.com" aria-label="Email" title="Email">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
                 </a>
+                <a href="https://github.com/atharvaaalok" aria-label="GitHub" title="GitHub">
+                    <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/atharva-aalok-506bba1a6/" aria-label="LinkedIn" title="LinkedIn">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </a>
+                <a href="https://x.com/atharvaaalok" aria-label="X" title="X">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+                </a>
+                <a class="cv" href="assets/AtharvaAalok_CV.pdf">CV</a>
+            </nav>
+        </div>
+    </header>
 
-                <div class="social">
-                    <a href="mailto:atharvaaalok@gmail.com" title="Email" aria-label="Email">
-                        <i class="fa-solid fa-envelope social-icon" aria-hidden="true"></i>
-                    </a>
-                    <a href="https://github.com/atharvaaalok" title="GitHub" aria-label="GitHub"
-                        target="_blank" rel="noopener">
-                        <i class="fa-brands fa-github social-icon" aria-hidden="true"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/atharva-aalok-506bba1a6/" title="LinkedIn"
-                        aria-label="LinkedIn" target="_blank" rel="noopener">
-                        <i class="fa-brands fa-linkedin social-icon" aria-hidden="true"></i>
-                    </a>
-                    <a href="https://x.com/atharvaaalok" title="X" aria-label="X (Twitter)"
-                        target="_blank" rel="noopener">
-                        <i class="fa-brands fa-x-twitter social-icon" aria-hidden="true"></i>
-                    </a>
+
+    <main id="main" class="wrap">
+
+        <ol class="timeline" aria-label="Timeline">
+            <li class="era now">
+                <p class="when">2026 –</p>
+                <span class="mark" aria-hidden="true">MIT</span>
+                <div class="what">
+                    <p>I'm a Ph.D. student at <a href="https://www.mit.edu/">MIT</a>
+                    <span class="todo">[department · lab · advisor]</span>, working on agentic CAD and
+                    machine-learning methods for designing aircraft and other engineered systems.</p>
                 </div>
-            </aside>
-        </main>
+            </li>
 
-    </body>
+            <li class="era">
+                <p class="when">2024 – 2026</p>
+                <span class="mark" aria-hidden="true">SU</span>
+                <div class="what">
+                    <p>M.S. in Aeronautical and Astronautical Engineering at
+                    <a href="https://www.stanford.edu/">Stanford</a> (GPA 4.07), in
+                    <a href="https://engineering.stanford.edu/people/juan-alonso">Juan J. Alonso</a>'s
+                    <a href="https://adl.stanford.edu/">Aerospace Design Lab</a>. There I built:</p>
+                    <ul>
+                        <li><a href="#nignets">NIGnets</a>, neural networks that can only represent
+                            non-self-intersecting geometry, so an optimizer never produces an invalid
+                            shape.</li>
+                        <li>Neural operators, with <a href="https://tensorlab.cms.caltech.edu/users/anima/">Anima
+                            Anandkumar</a>'s group at Caltech, that predict surface pressure and skin
+                            friction to within 2%.</li>
+                        <li>Deep RL agents, with Elie Hachem at Mines Paris – PSL, that reshape airfoils to
+                            maximize lift-to-drag (up to 61.64) or to hit any target L/D.</li>
+                        <li>A dataset of ~250,000 RANS simulations: 1,500 UIUC airfoils, 16 angles of
+                            attack, Mach 0.01–0.5, run in SU2.</li>
+                    </ul>
+                    <p>I was also a teaching assistant for AA141, Aircraft Conceptual Design.</p>
+                </div>
+            </li>
 
+            <li class="era">
+                <p class="when">2022 – 2023</p>
+                <span class="mark" aria-hidden="true">IISc</span>
+                <div class="what">
+                    <p>At IISc Bangalore's AI and Robotics Lab with S. Sundaram, I worked on a
+                    high-altitude <a href="https://github.com/atharvaaalok/Jet_UAV_Design">jet UAV</a>
+                    with a novel two-axis thrust-vectoring mechanism, and designed, fabricated and
+                    instrumented its thrust stand.</p>
+                </div>
+            </li>
+
+            <li class="era">
+                <p class="when">2019 – 2023</p>
+                <span class="mark" aria-hidden="true">IITM</span>
+                <div class="what">
+                    <p>B.Tech in Aerospace Engineering at <a href="https://www.iitm.ac.in/">IIT Madras</a>,
+                    graduating first in my department (1 / 58) with the HAL Prize, the Institute Silver
+                    Medal. With <a href="https://ae.iitm.ac.in/~sujith/">R. I. Sujith</a> I studied early
+                    warning signals and rate-induced tipping in nonlinear systems, which became my
+                    bachelor's thesis and a paper at the Conference on Nonlinear Systems and Dynamics.</p>
+                </div>
+            </li>
+        </ol>
+
+
+        <section aria-labelledby="bio">
+            <h2 id="bio">Bio</h2>
+            <p class="bio">Atharva Aalok is a Ph.D. student at MIT working on computational methods for
+            aerospace and mechanical design: agentic CAD, high-fidelity and machine-learned simulation,
+            and learned design optimization. Atharva holds an M.S. in Aeronautical and Astronautical
+            Engineering from Stanford University, earned in the Aerospace Design Lab, and a B.Tech in
+            Aerospace Engineering from IIT Madras, finishing first in the department.</p>
+        </section>
+
+
+        <section aria-labelledby="research">
+            <h2 id="research">Selected research</h2>
+
+            <article class="work" id="nignets">
+                <a class="thumb" href="https://atharvaaalok.github.io/NIGnets/" tabindex="-1" aria-hidden="true">
+                    <img src="assets/NIGnets.svg" width="374" height="152" alt="" loading="lazy">
+                </a>
+                <div>
+                    <h3><a href="https://atharvaaalok.github.io/NIGnets/">NIGnets: Neural Injective Geometry Networks</a></h3>
+                    <p>A neural architecture with a hard guarantee: every shape it represents is a simple
+                    closed curve or surface. Meshes stay watertight, and optimizers search only over
+                    physically valid designs.</p>
+                    <p class="meta">
+                        <a href="https://github.com/atharvaaalok/NIGnets">code</a> ·
+                        <a href="https://github.com/atharvaaalok/NIGnets/blob/main/resources/NIGnets_paper.pdf">paper</a> ·
+                        <a href="https://atharvaaalok.github.io/NIGnets/">docs</a> ·
+                        <a href="https://www.figma.com/slides/sLtZ3GBuKDcFL2KfJkTfMH/NIG_AeroAstro_ResearchLunch_5March2025?node-id=1-354&amp;p=f&amp;t=Y3l6B9gaEH6gEbhZ-0">talk</a>
+                    </p>
+                </div>
+            </article>
+
+            <article class="work">
+                <span class="thumb photo" aria-hidden="true">
+                    <img src="assets/neuralop_shapeopt.png" width="1195" height="574" alt="" loading="lazy">
+                </span>
+                <div>
+                    <h3>Robust shape optimization with neural shape representations and neural operators</h3>
+                    <p>Neural-operator surrogates (FNOGNO, GINO, BNO) trained on SU2 Euler and RANS data
+                    predict pressure and skin friction to within 2%, while NIGnet and NeuralODE geometry
+                    keeps the optimizer on valid, in-distribution shapes.</p>
+                    <p class="meta">With Jiayi Zhou (co-first author), Valentin Duruisseaux, Xinyi Li,
+                    Juan J. Alonso and Anima Anandkumar · code coming soon</p>
+                </div>
+            </article>
+
+            <article class="work">
+                <a class="thumb" href="https://github.com/atharvaaalok/airfoil_shape_opt_deep_rl" tabindex="-1" aria-hidden="true">
+                    <img src="assets/airfoil_shape_opt_deep_rl.svg" width="163" height="113" alt="" loading="lazy">
+                </a>
+                <div>
+                    <h3><a href="https://github.com/atharvaaalok/airfoil_shape_opt_deep_rl">Aerodynamic shape optimization with deep reinforcement learning</a></h3>
+                    <p>PPO and actor-critic agents reshape NIGnet airfoils to maximize lift-to-drag in
+                    XFoil, reaching L/D of 61.64. Hindsight Experience Replay lets a single policy design
+                    to any target L/D.</p>
+                    <p class="meta">
+                        <a href="https://github.com/atharvaaalok/airfoil_shape_opt_deep_rl">code</a> ·
+                        <a href="https://github.com/atharvaaalok/airfoil_shape_opt_deep_rl/blob/main/resources/paper.pdf">paper</a> ·
+                        <a href="https://github.com/atharvaaalok/airfoil_shape_opt_deep_rl/blob/main/resources/poster.pdf">poster</a>
+                    </p>
+                </div>
+            </article>
+        </section>
+
+
+        <section aria-labelledby="publications">
+            <h2 id="publications">Publications</h2>
+            <ol class="pubs">
+                <li><div>
+                    <a class="t" href="https://github.com/atharvaaalok/NIGnets/blob/main/resources/NIGnets_paper.pdf">NIGnets: Neural Injective Geometry Networks for representing non-self-intersecting geometry</a>
+                    <span class="venue">In preparation</span>
+                    <span class="authors"><b>Atharva Aalok</b>, Juan J. Alonso</span>
+                </div></li>
+                <li><div>
+                    <span class="t">Robust shape optimization with neural shape representations and neural operators</span>
+                    <span class="venue">In preparation</span>
+                    <span class="authors">Jiayi Zhou*, <b>Atharva Aalok</b>*, Valentin Duruisseaux, Xinyi Li, Juan J. Alonso, Anima Anandkumar</span>
+                </div></li>
+                <li><div>
+                    <a class="t" href="https://github.com/atharvaaalok/airfoil_shape_opt_deep_rl/blob/main/resources/paper.pdf">Robust aerodynamic shape optimization via deep reinforcement learning with non-self-intersecting geometry networks</a>
+                    <span class="venue">In preparation</span>
+                    <span class="authors"><b>Atharva Aalok</b>, Juan J. Alonso</span>
+                </div></li>
+                <li><div>
+                    <span class="t">Breaking points of early warning signals: robustness in rate-delayed tipping regime</span>
+                    <span class="venue accepted">Accepted · CNSD</span>
+                    <span class="authors"><b>Atharva Aalok</b>, Induja Pavithran, R. I. Sujith</span>
+                </div></li>
+            </ol>
+            <p class="note">* Equal contribution. CNSD: Conference on Nonlinear Systems and Dynamics.</p>
+        </section>
+
+
+        <section aria-labelledby="aircraft">
+            <h2 id="aircraft">Aircraft</h2>
+            <ul class="kv">
+                <li><a class="k" href="https://github.com/atharvaaalok/Jet_UAV_Design">Thrust-vectoring jet UAV</a>
+                    <span>High-altitude jet UAV with a novel two-axis thrust-vectoring mechanism; proof-of-concept
+                    prototype and an instrumented thrust stand. IISc Bangalore, 2022–23.</span></li>
+                <li><a class="k" href="https://github.com/atharvaaalok/Team_SARAS">Search-and-rescue UAV</a>
+                    <span>A 10.47 kg, 1.95 m-span design carrying 1.3 kg over 115 km, with 90 minutes of
+                    endurance at 20 m/s. 2022.</span></li>
+            </ul>
+        </section>
+
+
+        <section aria-labelledby="software">
+            <h2 id="software">Open source</h2>
+            <ul class="kv">
+                <li><a class="k" href="https://github.com/atharvaaalok/NIGnets">NIGnets</a>
+                    <span>PyTorch library for injective geometry networks. <a href="https://atharvaaalok.github.io/NIGnets/">Docs</a>.</span></li>
+                <li><a class="k" href="https://github.com/atharvaaalok/deepfusion">DeepFusion</a>
+                    <span>A deep learning framework written from scratch: MLPs, CNNs, RNNs. On <a href="https://pypi.org/project/deepfusion/">PyPI</a>.</span></li>
+                <li><a class="k" href="https://github.com/atharvaaalok/geodiff">GeoDiff</a>
+                    <span>Differentiable geometry representations in PyTorch. <a href="https://atharvaaalok.github.io/geodiff/">Docs</a>.</span></li>
+                <li><a class="k" href="https://github.com/atharvaaalok/geosimilarity">GeoSimilarity</a>
+                    <span>Differentiable geometric loss functions. <a href="https://atharvaaalok.github.io/geosimilarity/">Docs</a>.</span></li>
+                <li><a class="k" href="https://www.mathworks.com/matlabcentral/fileexchange/100766-professional-plots">Professional Plots</a>
+                    <span>MATLAB toolbox for publication-quality plots, with over 4,200 downloads.</span></li>
+                <li><a class="k" href="https://www.mathworks.com/matlabcentral/fileexchange/134476-moving-window-statistics">Moving Window Statistics</a>
+                    <span>MATLAB toolbox that computes moving-window statistics 50–760× faster.</span></li>
+            </ul>
+            <p class="note">Among the top 2% of open-source contributors on MathWorks. Everything else is on
+            <a href="https://github.com/atharvaaalok">GitHub</a>.</p>
+        </section>
+
+
+        <section aria-labelledby="talks">
+            <h2 id="talks">Talks and teaching</h2>
+            <ul class="kv dated">
+                <li><span class="k">Mar 2025</span>
+                    <span>NIGnets, at the AeroAstro Research Lunch, Stanford.
+                    <a href="https://www.figma.com/slides/sLtZ3GBuKDcFL2KfJkTfMH/NIG_AeroAstro_ResearchLunch_5March2025?node-id=1-354&amp;p=f&amp;t=Y3l6B9gaEH6gEbhZ-0">Slides</a>.</span></li>
+                <li><span class="k">Spring 2025</span>
+                    <span>Teaching assistant for AA141, Atmospheric Flight: Aircraft Conceptual Design, Stanford.</span></li>
+            </ul>
+        </section>
+
+
+        <section aria-labelledby="honors">
+            <h2 id="honors">Honors</h2>
+            <ul class="kv dated">
+                <li><span class="k">2023</span>
+                    <span>HAL Prize and Institute Silver Medal, IIT Madras, for the best academic record in Aerospace Engineering.</span></li>
+                <li><span class="k">2019</span>
+                    <span>KVPY Fellowship, Department of Science and Technology, Government of India.</span></li>
+                <li><span class="k">2018</span>
+                    <span>National Talent Search (NTSE) Fellowship, NCERT, Government of India.</span></li>
+            </ul>
+        </section>
+
+
+        <section aria-labelledby="misc">
+            <h2 id="misc">Misc</h2>
+            <p>I run half marathons and ride 100 km+ Gran Fondos. I also acted in the opening scene of the film
+            <a href="https://youtu.be/JoRwXMLsVis?t=29"><cite>History of Yoga</cite></a>, which has been screened
+            on six continents.</p>
+        </section>
+
+    </main>
+
+
+    <footer class="wrap">
+        <span>© 2026 Atharva Aalok</span>
+        <span>Hand-written HTML and CSS. No frameworks.</span>
+    </footer>
+</body>
 </html>
