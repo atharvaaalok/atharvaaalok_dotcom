@@ -146,6 +146,7 @@ h1 {
     font-size: 18.5px;
     line-height: 1.5;
     color: var(--muted);
+    text-wrap: balance;
 }
 
 /* Social badges: identical circles, each glyph trimmed to the same optical size. */
