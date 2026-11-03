@@ -381,6 +381,18 @@ h1 {
     text-decoration-color: var(--line);
 }
 
+/* Professors' names are in the accent colour, so advisors and collaborators stand out. */
+a.prof {
+    color: var(--accent);
+    font-weight: 500;
+    text-decoration-color: var(--accent-line);
+}
+
+a.prof:hover {
+    color: var(--accent-ink);
+    text-decoration-color: currentColor;
+}
+
 .what p {
     margin: 8px 0;
 }
