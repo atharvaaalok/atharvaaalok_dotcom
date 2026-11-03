@@ -3,39 +3,51 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Atharva Aalok</title>
+        <title>Research | Atharva Aalok</title>
 
         <meta name="author" content="Atharva Aalok">
         <meta
             name="description"
-            content="Atharva Aalok is a graduate student at Stanford University working on
-            aerodynamic shape optimization, computational design, and machine learning for CFD."
+            content="Research by Atharva Aalok on aerodynamic shape optimization using deep
+            reinforcement learning, neural operators, and NIGnets."
         >
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="Computational Design, Machine Learning, CFD">
 
-        <link rel="icon" href="assets/favicon.svg" type="image/x-icon">
+        <link rel="canonical" href="https://atharvaaalok.com/research.html">
+
+        <!--Link previews-->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Research | Atharva Aalok">
+        <meta
+            property="og:description"
+            content="Aerodynamic shape optimization using deep reinforcement learning, neural
+            operators, and NIGnets."
+        >
+        <meta property="og:url" content="https://atharvaaalok.com/research.html">
+        <meta property="og:image" content="https://atharvaaalok.com/assets/profile_pic.jpg">
+        <meta name="twitter:card" content="summary">
+
+        <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 
         <!--Main styles-->
         <link rel="stylesheet" href="main.css" type="text/css">
         <link rel="stylesheet" href="random_dots.css">
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-        <script src="random_dots.js"></script>
-        <script src="mathjax-config.js"></script>
-        <script id="MathJax-script" async
-            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="random_dots.js" defer></script>
 
         <!--Icons-->
         <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-        <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous">
 
         <!--Google Fonts-->
-        <link 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
             rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&display=swap"
         >
     </head>
 
@@ -44,13 +56,14 @@
         <header class="header">
             <nav class="header-right" aria-label="Main navigation">
                 <a href="index.html"><b>Home</b></a>
-                <a href="research.html"><b>Research</b></a>
+                <a href="research.html" aria-current="page"><b>Research</b></a>
                 <a href="projects.html"><b>Projects</b></a>
-                <a href="hobbies.html"><b>Hobbies</b></a>
             </nav>
         </header>
 
         <main class="page-container">
+            <h1 class="page-title">Research</h1>
+
             <section class="research-section">
 
                 <!--Deep Reinforcement Learning based Shape Optimization-->
@@ -58,7 +71,8 @@
                     <a href="assets/airfoil_shape_opt_deep_rl.svg">
                         <img src="assets/airfoil_shape_opt_deep_rl.svg"
                             alt="RL architecture for airfoil shape optimization."
-                            class="research-image hoverZoomLink">
+                            width="163" height="113"
+                            class="research-image">
                     </a>
 
                     <div class="research-content">
@@ -78,8 +92,8 @@
                             </em>
                             <br>
                             <em>
-                                Affiliation: <a href="https://adl.stanford.edu/" target="_blank">
-                                Aerospace Design Lab</a>, Stanford University
+                                Affiliation: <a href="https://adl.stanford.edu/" target="_blank"
+                                rel="noopener">Aerospace Design Lab</a>, Stanford University
                             </em>
                         </p>
 
@@ -93,20 +107,20 @@
                             optimization we use NIGnets, a new neural architecture that we developed
                             that gives a hard guarantee on non-self-intersecting geometry
                             representation. A NIGnet as a whole with a particular setting of its
-                            weights and biases (denoted by $\phi$) represents a particular shape.
+                            weights and biases (denoted by <i>φ</i>) represents a particular shape.
                             Our shape optimization approach can be summarized as follows:
                         </p>
 
                         <ol>
-                            <li>Represent state (shape) using NIGnet parameters $\phi$.</li>
-                            <li>An action corresponds to outputting $\Delta \phi$ that perturbs the
-                                NIGnet parameters to $\phi' = \phi + \Delta \phi$.</li>
+                            <li>Represent state (shape) using NIGnet parameters <i>φ</i>.</li>
+                            <li>An action corresponds to outputting Δ<i>φ</i> that perturbs the
+                                NIGnet parameters to <i>φ</i>′&nbsp;=&nbsp;<i>φ</i>&nbsp;+&nbsp;Δ<i>φ</i>.</li>
                             <li>A reward is produced at each step that corresponds to the
-                                $\frac{L}{D}$ ratio of the current shape.</li>
+                                <i>L</i>/<i>D</i> ratio of the current shape.</li>
                         </ol>
 
                         <p>
-                            Since the NIGnet for any set of parameters $\phi$ always represents
+                            Since the NIGnet for any set of parameters <i>φ</i> always represents
                             non-self-intersecting geometry, it will constrain the design space to
                             only the set of physically reasonable shapes and therefore allow an RL
                             agent to perform ambitious shape optimization. We also utilize Hindsight
@@ -116,49 +130,41 @@
 
                         <p class="research-links">
                             <a href="https://github.com/atharvaaalok/airfoil_shape_opt_deep_rl"
+                                title="Code" aria-label="Code on GitHub"
                                 target="_blank" rel="noopener" class="icon-link">
-                                <i class="fa-brands fa-github"></i>
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
                             </a>
 
-                            <a href="assets/paper.pdf"
+                            <a href="https://github.com/atharvaaalok/airfoil_shape_opt_deep_rl/blob/main/resources/paper.pdf"
+                                title="Paper" aria-label="Paper (PDF)"
                                 target="_blank" rel="noopener" class="icon-link">
-                                <i class="fa-regular fa-file-pdf"></i>
+                                <i class="fa-regular fa-file-pdf" aria-hidden="true"></i>
                             </a>
 
-                            <a href="assets/poster.pdf"
+                            <a href="https://github.com/atharvaaalok/airfoil_shape_opt_deep_rl/blob/main/resources/poster.pdf"
+                                title="Poster" aria-label="Poster (PDF)"
                                 target="_blank" rel="noopener" class="icon-link">
-                                <i class="fa-solid fa-person-chalkboard"></i>
-                            </a>
-
-                            <a href="assets/video.mp4"
-                                target="_blank" rel="noopener" class="icon-link">
-                                <i class="fa-solid fa-video"></i>
-                            </a>
-
-                            <a href="assets/documentation.com"
-                                target="_blank" rel="noopener" class="icon-link">
-                                <i class="fa-solid fa-book"></i>
+                                <i class="fa-solid fa-person-chalkboard" aria-hidden="true"></i>
                             </a>
                         </p>
 
                     </div>
                 </article>
-                
+
                 <!--Neural Operator based Shape Optimization-->
                 <article class="research-card">
                     <a href="assets/neuralop_shapeopt.png">
                         <img src="assets/neuralop_shapeopt.png"
                             alt="Bilinear interpolation of airfoils in a NeuralODE generative
-                            model." class="research-image hoverZoomLink">
+                            model." width="1195" height="574" loading="lazy"
+                            class="research-image">
                     </a>
 
                     <div class="research-content">
+                        <!--Repo github.com/neuraloperator/ShapeOpt is private: link it once public-->
                         <h2 class="research-title">
-                            <a href="https://github.com/neuraloperator/ShapeOpt"
-                                target="_blank" rel="noopener">
-                                Robust Shape Optimization with Neural Shape Representations and
-                                Neural Operators
-                            </a>
+                            Robust Shape Optimization with Neural Shape Representations and Neural
+                            Operators
                         </h2>
 
                         <p class="research-meta">
@@ -175,8 +181,8 @@
                             </em>
                             <br>
                             <em>
-                                Affiliation: <a href="https://adl.stanford.edu/" target="_blank">
-                                Aerospace Design Lab</a>, Stanford University
+                                Affiliation: <a href="https://adl.stanford.edu/" target="_blank"
+                                rel="noopener">Aerospace Design Lab</a>, Stanford University
                             </em>
                         </p>
 
@@ -191,7 +197,7 @@
                         </p>
 
                         <p>
-                            Generated Euler and RANS datasets with $\sim$20,000 simulations each
+                            Generated Euler and RANS datasets with ~20,000 simulations each
                             using SU2 for 1500 airfoils at 16 different angles of attack. Trained
                             Neural Operators to 2% accuracy on pressure field and skin-friction
                             predictions.
@@ -203,27 +209,21 @@
                             reconstruction loss of 1e-8 L2 on the entire shape dataset.
                         </p>
 
-                        <p class="research-links">
-                            <a href="https://github.com/neuraloperator/ShapeOpt"
-                                target="_blank" rel="noopener" class="icon-link">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                        </p>
-
                     </div>
                 </article>
-                
+
                 <!--NIGnets-->
                 <article class="research-card">
                     <a href="assets/NIGnets.svg">
                         <img src="assets/NIGnets.svg"
                             alt="NIGnets logo with text inside."
-                            class="research-image hoverZoomLink">
+                            width="374" height="152" loading="lazy"
+                            class="research-image">
                     </a>
 
                     <div class="research-content">
                         <h2 class="research-title">
-                            <a href="https://github.com/atharvaaalok/airfoil_shape_opt_deep_rl"
+                            <a href="https://github.com/atharvaaalok/NIGnets"
                                 target="_blank" rel="noopener">
                                 NIGnets: Neural Injective Geometry Networks for Representing
                                 non-self-intersecting Geometry
@@ -238,8 +238,8 @@
                             </em>
                             <br>
                             <em>
-                                Affiliation: <a href="https://adl.stanford.edu/" target="_blank">
-                                Aerospace Design Lab</a>, Stanford University
+                                Affiliation: <a href="https://adl.stanford.edu/" target="_blank"
+                                rel="noopener">Aerospace Design Lab</a>, Stanford University
                             </em>
                         </p>
 
@@ -261,23 +261,27 @@
 
                         <p class="research-links">
                             <a href="https://github.com/atharvaaalok/NIGnets"
+                                title="Code" aria-label="Code on GitHub"
                                 target="_blank" rel="noopener" class="icon-link">
-                                <i class="fa-brands fa-github"></i>
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
                             </a>
 
                             <a href="https://github.com/atharvaaalok/NIGnets/blob/main/resources/NIGnets_paper.pdf"
+                                title="Paper" aria-label="Paper (PDF)"
                                 target="_blank" rel="noopener" class="icon-link">
-                                <i class="fa-regular fa-file-pdf"></i>
+                                <i class="fa-regular fa-file-pdf" aria-hidden="true"></i>
                             </a>
 
                             <a href="https://www.figma.com/slides/sLtZ3GBuKDcFL2KfJkTfMH/NIG_AeroAstro_ResearchLunch_5March2025?node-id=1-354&p=f&t=Y3l6B9gaEH6gEbhZ-0"
+                                title="Slides" aria-label="Slides"
                                 target="_blank" rel="noopener" class="icon-link">
-                                <i class="fa-solid fa-person-chalkboard"></i>
+                                <i class="fa-solid fa-person-chalkboard" aria-hidden="true"></i>
                             </a>
 
                             <a href="https://atharvaaalok.github.io/NIGnets/"
+                                title="Documentation" aria-label="Documentation"
                                 target="_blank" rel="noopener" class="icon-link">
-                                <i class="fa-solid fa-book"></i>
+                                <i class="fa-solid fa-book" aria-hidden="true"></i>
                             </a>
                         </p>
 

@@ -8,31 +8,66 @@
         <meta name="author" content="Atharva Aalok">
         <meta
             name="description"
-            content="Atharva Aalok is a graduate student at Stanford University working on
-            aerodynamic shape optimization, computational design, and machine learning for CFD."
+            content="Atharva Aalok works on aerodynamic shape optimization, computational design,
+            and machine learning for CFD."
         >
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="Computational Design, Machine Learning, CFD">
 
-        <link rel="icon" href="assets/favicon.svg" type="image/x-icon">
+        <link rel="canonical" href="https://atharvaaalok.com/">
+
+        <!--Link previews-->
+        <meta property="og:type" content="profile">
+        <meta property="og:title" content="Atharva Aalok">
+        <meta
+            property="og:description"
+            content="Aerodynamic shape optimization, computational design, and machine learning
+            for CFD."
+        >
+        <meta property="og:url" content="https://atharvaaalok.com/">
+        <meta property="og:image" content="https://atharvaaalok.com/assets/profile_pic.jpg">
+        <meta name="twitter:card" content="summary">
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Atharva Aalok",
+                "url": "https://atharvaaalok.com/",
+                "image": "https://atharvaaalok.com/assets/profile_pic.jpg",
+                "alumniOf": ["Stanford University", "Indian Institute of Technology Madras"],
+                "sameAs": [
+                    "https://github.com/atharvaaalok",
+                    "https://www.linkedin.com/in/atharva-aalok-506bba1a6/",
+                    "https://x.com/atharvaaalok"
+                ]
+            }
+        </script>
+
+        <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 
         <!--Main styles-->
         <link rel="stylesheet" href="main.css" type="text/css">
         <link rel="stylesheet" href="random_dots.css">
 
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-        <script src="random_dots.js"></script>
+        <script src="random_dots.js" defer></script>
 
         <!--Icons-->
         <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous">
         <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+            href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.6/css/academicons.min.css"
+            integrity="sha512-TNfdJEUUJmfj2DRlAKXBg7HroqoXYLon5XPEEWYa2+H/XSD2HAr0BwkRrAoNLAEz79x7XURTFRWDn9yhMNbbNQ=="
+            crossorigin="anonymous">
 
         <!--Google Fonts-->
-        <link 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
             rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&display=swap"
         >
     </head>
 
@@ -40,10 +75,9 @@
     <body>
         <header class="header">
             <nav class="header-right" aria-label="Main navigation">
-                <a href="index.html"><b>Home</b></a>
+                <a href="index.html" aria-current="page"><b>Home</b></a>
                 <a href="research.html"><b>Research</b></a>
                 <a href="projects.html"><b>Projects</b></a>
-                <a href="hobbies.html"><b>Hobbies</b></a>
             </nav>
         </header>
 
@@ -54,15 +88,16 @@
 
                 <p>
                     I am a second year MS student in AeroAstro at Stanford University working with
-                    <a href="https://engineering.stanford.edu/people/juan-alonso" target="_blank">
-                    Prof. Juan J. Alonso </a> at the
-                    <a href="https://adl.stanford.edu/" target="_blank">Aerospace Design Lab</a>. I
-                    also collaborate with
-                    <a href="https://tensorlab.cms.caltech.edu/users/anima/" target="_blank">Prof.
-                    Anima Anandkumar</a>'s' group at Caltech. Previously, I obtained my Bachelor's
-                    degree in Aerospace engineering at IIT Madras where I worked with
-                    <a href="http://www.ae.iitm.ac.in/~sujith/" target="_blank">Prof. R.I.
-                    Sujith</a>.
+                    <a href="https://engineering.stanford.edu/people/juan-alonso" target="_blank"
+                    rel="noopener">Prof. Juan J. Alonso</a> at the
+                    <a href="https://adl.stanford.edu/" target="_blank" rel="noopener">Aerospace
+                    Design Lab</a>. I also collaborate with
+                    <a href="https://tensorlab.cms.caltech.edu/users/anima/" target="_blank"
+                    rel="noopener">Prof. Anima Anandkumar</a>'s group at Caltech. Previously, I
+                    obtained my Bachelor's degree in Aerospace engineering at IIT Madras where I
+                    worked with
+                    <a href="https://ae.iitm.ac.in/~sujith/" target="_blank" rel="noopener">Prof.
+                    R.I. Sujith</a>.
                 </p>
 
                 <p>
@@ -79,15 +114,15 @@
                     <li><b>Optimization:</b> Adjoint-based optimization, DeepRL optimization.</li>
                 </ol>
 
-                <p style="display:inline;color:#ff0066;">
-                    <br>
+                <p class="note">
                     <b><u>NOTE:</u> I am applying for graduate school for Fall 2026 admit.</b>
                 </p>
 
                 <p class="cv-link">
-                    <a href="assets/AtharvaAalok_CV.pdf" title="CV" target="_blank" rel="noopener">
-                        <i class="ai ai-cv social-icon cv-icon"></i>
-                        <i class="fa-solid fa-file-pdf social-icon cv-pdf-icon"></i>
+                    <a href="assets/AtharvaAalok_CV.pdf" title="CV" aria-label="CV (PDF)"
+                        target="_blank" rel="noopener">
+                        <i class="ai ai-cv social-icon" aria-hidden="true"></i>
+                        <i class="fa-solid fa-file-pdf social-icon" aria-hidden="true"></i>
                     </a>
                 </p>
             </section>
@@ -96,28 +131,28 @@
                 <a href="assets/profile_pic.jpg">
                     <img
                         src="assets/profile_pic.jpg"
-                        alt="Profile picture"
+                        alt="Atharva Aalok"
+                        width="1100"
+                        height="1100"
                         class="profile-pic"
                     >
                 </a>
 
                 <div class="social">
-                    <a href="mailto:atharvaaalok@gmail.com" title="Email">
-                        <i class="fa-solid fa-envelope social-icon"></i>
+                    <a href="mailto:atharvaaalok@gmail.com" title="Email" aria-label="Email">
+                        <i class="fa-solid fa-envelope social-icon" aria-hidden="true"></i>
                     </a>
-                    <a href="https://github.com/atharvaaalok" title="Github" target="_blank" 
-                        rel="noopener">
-                        <i class="fa-brands fa-github social-icon"></i>
+                    <a href="https://github.com/atharvaaalok" title="GitHub" aria-label="GitHub"
+                        target="_blank" rel="noopener">
+                        <i class="fa-brands fa-github social-icon" aria-hidden="true"></i>
                     </a>
                     <a href="https://www.linkedin.com/in/atharva-aalok-506bba1a6/" title="LinkedIn"
+                        aria-label="LinkedIn" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-linkedin social-icon" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://x.com/atharvaaalok" title="X" aria-label="X (Twitter)"
                         target="_blank" rel="noopener">
-                        <i class="fa-brands fa-linkedin social-icon"></i>
-                    </a>
-                    <a href="scholar" title="Google Scholar" target="_blank" rel="noopener">
-                        <i class="ai ai-google-scholar social-icon"></i>
-                    </a>
-                    <a href="https://x.com/atharvaaalok" title="X" target="_blank" rel="noopener">
-                        <i class="fa-brands fa-x-twitter social-icon"></i>
+                        <i class="fa-brands fa-x-twitter social-icon" aria-hidden="true"></i>
                     </a>
                 </div>
             </aside>

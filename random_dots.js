@@ -1,18 +1,17 @@
-$(document).ready(function(){
-  
-  function freshDot(){
-    this.obj = document.createElement("div");
-    this.obj.classList.add("box");
-    this.obj.style.top = (window.innerHeight * Math.random()) + 'px';
-    this.obj.style.left = (window.innerWidth * Math.random()) + 'px';
-    this.size = Math.floor(3 * Math.random()) + 1;
-    this.obj.style.height =  this.size + 'px';
-    this.obj.style.width = this.size + 'px';
-    
-    document.body.appendChild(this.obj);
-  }
-  var dot = [];
-  for(var i = 0 ; i < 300; i++){
-    dot.push(new freshDot());
-  }
-});
+// Loaded with defer, so document.body already exists.
+// Positions are in % of the viewport so the dots stay spread out after a resize.
+const dots = document.createDocumentFragment();
+
+for (let i = 0; i < 300; i++) {
+  const dot = document.createElement("div");
+  dot.classList.add("box");
+  dot.style.top = (100 * Math.random()) + '%';
+  dot.style.left = (100 * Math.random()) + '%';
+  const size = Math.floor(3 * Math.random()) + 1;
+  dot.style.height = size + 'px';
+  dot.style.width = size + 'px';
+
+  dots.appendChild(dot);
+}
+
+document.body.appendChild(dots);

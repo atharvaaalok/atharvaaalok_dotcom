@@ -1,33 +1,34 @@
+:root {
+  --link: #0074E1;
+  --accent: #d6005a;      /* #ff0066 failed contrast on white */
+  --icon-hover: #B509AC;
+}
+
 a {
-  color: #0074E1; /*#14A098;*/ /*#0074E1;*/
+  color: var(--link);
   text-decoration: none;
 }
 
 a:focus,
 a:hover {
-  color: #ff0066;
-  text-decoration: none;
+  color: var(--accent);
+  text-decoration: underline;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
-strong {
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-}
-
 .name {
-  font-family: 'Poppins', sans-serif;
-  font-size: 32px;
+  font-size: 2rem;
   margin-bottom: 0.5rem;
 }
 
-span.highlight {
-  background-color: #ffffd0;
+.page-title {
+  font-size: 2rem;
+  margin: 0;
 }
 
 .header {
@@ -42,33 +43,27 @@ span.highlight {
 
 /* Style the header links */
 .header a {
-  color: #0074E1;
+  color: var(--link);
   text-align: center;
   padding: 12px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.25rem;
   border-radius: 4px;
 }
 
-/* Change the background color on mouse-over */
-.header a:hover {
-  background-color: white;
-  color: #ff0066;
-}
-
 /* Match keyboard focus to hover */
+.header a:hover,
 .header a:focus {
-  background-color: white;
-  color: #ff0066;
+  color: var(--accent);
 }
 
-/* Style the active/current link*/
-/*.header a.active {
-  background-color: white;
-  color: #0074E1;
-}*/
+/* Style the current page link */
+.header a[aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
 
-/* mobile: stack links vertically */
+/* mobile: wrap links instead of overflowing */
 @media screen and (max-width: 500px) {
   .header {
     justify-content: flex-start;
@@ -76,12 +71,7 @@ span.highlight {
 
   .header-right {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .header a {
-    text-align: left;
+    flex-wrap: wrap;
   }
 }
 
@@ -103,7 +93,11 @@ span.highlight {
 /* Left and right columns */
 .intro {
     flex: 3;
-    font-size: 18px;
+    font-size: 1.125rem;
+}
+
+.note {
+  color: var(--accent);
 }
 
 /* Profile image */
@@ -114,6 +108,7 @@ span.highlight {
 
 .profile-pic {
   width: 100%;
+  height: auto;
   border-radius: 50%;
   display: block;
 }
@@ -134,13 +129,19 @@ span.highlight {
     transition: color 0.2s ease-in-out;
 }
 
-/* Hover effect */
-.social a:hover {
+/* Hover and focus effect */
+.social a:hover,
+.social a:focus,
+.cv-link a:hover,
+.cv-link a:focus {
     text-decoration: none;
 }
 
-.social a:hover .social-icon {
-    color: #B509AC;
+.social a:hover .social-icon,
+.social a:focus .social-icon,
+.cv-link a:hover .social-icon,
+.cv-link a:focus .social-icon {
+    color: var(--icon-hover);
 }
 
 /* ===== Responsive breakpoint (mobile) ===== */
@@ -159,11 +160,8 @@ span.highlight {
   }
 
   .profile-pic {
-    width: 100%;
-    max-width: 100%;
-    display: block;
-    margin: 0;
-    border-radius: 50%;   /* keep it circular on mobile */
+    max-width: 280px;
+    margin: 0 auto;
   }
 
   .intro {
@@ -171,17 +169,6 @@ span.highlight {
   }
 }
 
-
-/* Responsive: stack on small screens */
-@media (max-width: 900px) {
-  .research-card {
-    flex-direction: column;
-  }
-
-  .research-image {
-    width: 100%;
-  }
-}
 
 /* Center main content and limit width */
 .page-container {
@@ -231,32 +218,33 @@ span.highlight {
   margin-bottom: 12px;
 }
 
-.text-justify {
-  text-align: justify;
-}
-
-
-
 .research-links {
   display: flex;
+  flex-wrap: wrap;
   gap: 1.5rem;
   margin-top: 0.5rem;
-}
-
-.research-links a:hover {
-    text-decoration: none;
-    color: #B509AC;
 }
 
 .icon-link {
   margin-right: 0.5rem;
   vertical-align: middle;
+  font-size: 3rem;
+  color: #000000;
+  transition: color 0.2s ease-in-out;
 }
 
-.icon-link {
-    font-size: 3rem;
-    color: #000000;
-    transition: color 0.2s ease-in-out;
+.research-links a:hover,
+.research-links a:focus {
+    text-decoration: none;
+    color: var(--icon-hover);
+}
+
+/* Responsive: stack on small screens. The image keeps its 450px width and
+   max-width: 100% shrinks it on narrow screens. */
+@media (max-width: 900px) {
+  .research-card {
+    flex-direction: column;
+  }
 }
 
 
@@ -264,12 +252,4 @@ span.highlight {
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;  /* space between ai-cv and pdf icon */
-}
-
-.cv-icon {
-  font-size: 3rem;
-}
-
-.cv-pdf-icon {
-  font-size: 3rem;
 }
